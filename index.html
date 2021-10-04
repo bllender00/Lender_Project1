@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Hind+Guntur:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <title>Purple Chopstix Redesign</title>
+  </head>
+  <body>
+    <div class="myNav">
+      <h1 class="title">Purple Chopstix</h1>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Catering</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+      </ul>
+      <!-- .nav-items -->
+  
+      <div
+        class=" alert alert-light d-flex align-items-center justify-content-center" role="alert">
+        <a href="#" class="fa fa-facebook"></a>
+        <div class="alert-lg">
+          Currently Reservation Only <br>Wednesday—Saturday: 5PM to 8PM |
+          Sunday Brunch: 11AM to 1PM <br>371 Richland Avenue, Athens, OH 45701
+        </div>
+        <div class="alert-mobile">
+          Currently Reservation Only <br>Wednesday—Saturday: 5PM to 8PM
+          <br>Sunday Brunch: 11AM to 1PM <br>371 Richland Avenue, Athens, OH 45701
+        </div>
+      </div>
+      <!-- .alert -->
+    </div>
+    <!-- .myNav -->
+    <div class="jumbotron bkg-img-cover white-type"></div>
+    <!-- .jumbotron hero image-->
+  
+    <div class="top-CTA d-flex align-items-center justify-content-center">
+      <a type="button" class="btn btn-primary CTA-btn">Call for Reservation
+      <figcaption>(740) 592-4798</figcaption></a>
+      <a type="button" class="btn btn-primary CTA-btn">Order Carry Out</a>
+    </div>
+    <!-- reservation and carryout -->
+  
+    <div class="container">
+      <div class="brunch jumbotron bkg-img-cover white-type">
+        <div class="brunchText">
+          <p>Our brunch buffet offers tons of delicious items that change every week!</p>
+          <h4>Open every Sunday 11AM to 1PM</h4>
+        </div>
+      </div>
+    </div>
+    <!-- brunch container -->
+    
+    <div class="container menu">
+      <h2>Appetizers</h2>
+      <p class="menuContainer">
+        <a class="btn btn-primary menuBtn" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+          <img class="menuPhoto" src="img/brunch1.jpg" alt="menu item">
+          Greek Pizza</a>
+        
+        <button class="btn btn-primary menuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+          <img class="menuPhoto" src="img/brunch1.jpg" alt="menu item">
+          Toggle second element</button>
+        
+        <button class="btn btn-primary menuBtn" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
+          <img class="menuPhoto" src="img/brunch1.jpg" alt="menu item">
+          Toggle both elements</button>
+        
+        <button class="btn btn-primary menuBtn" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
+          <img class="menuPhoto" src="img/brunch1.jpg" alt="menu item">
+          Toggle both elements</button>
+        
+        <button class="btn btn-primary menuBtn" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
+          <img class="menuPhoto" src="img/brunch1.jpg" alt="menu item">
+          Toggle both elements</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- menu collapse -->
+
+  <div class="container catering">
+    <h2>Catering</h2>
+    <p>Please provide your contact info, event details and dish selections below.</p>
+    <div class="form-floating mb-3 cateringInput">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Full Name</label>
+    </div>
+    <div class="form-floating mb-3 cateringInput">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating mb-3 cateringInput">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Phone Number</label>
+    </div>
+    <div class="mb-3 cateringInput eventName">
+      <label for="formGroupExampleInput" class="form-label">Event Name</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Susie's Bridal party">
+    </div>
+    <div class="cateringEvents">
+      <div class="mb-3 eventInfo">
+        <label for="formGroupExampleInput" class="form-label">Event Date</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="mm/dd/yy">
+      </div>
+      <div class="mb-3 eventInfo">
+        <label for="formGroupExampleInput" class="form-label">Start Time</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="0:00 AM">
+      </div>
+      <div class="mb-3 eventInfo">
+        <label for="formGroupExampleInput" class="form-label">End Time</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="0:00 PM">
+      </div>
+    </div>
+    <!-- catering events -->
+
+    <p>
+      <button class="btn btn-primary cateringBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Catering Dishes &#8659
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+
+    <div class="cateringFood row">
+      <div class="col-6">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Antipasto tray
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Artichoke parmesan dip
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Brie in filo dough w/ apricot rosemary jam
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Cheese tray
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Chicken tenders
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Cilantro sweet chili shrimp
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Cream puffs
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Crepe rolls
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Croissants
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Crostini breads
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Deviled eggs
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Finger sandwhiches - assorted fillings
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Flatbread pinwheels
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Fruit platter
+          </label>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Greek pizza
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Hummus
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Honey ginger sweet potato fires
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Meatballs
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Mini burritos
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Nori sushi - california or inari
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Quesadillas
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Petit fours
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Phyllo cups - variety fillings
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Smoked salmon cheesecake squares
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Spanakopita
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Stuffed mushrooms
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Samosas
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            White chocolate strawberries
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- catering food -->
+    <p class="payment">Provide method of payment at time of order delivery.</p>
+    <input class="btn btn-primary cateringBtn submitBtn" type="submit" value="Place Catering Order">
+  </div>
+  
+  <div class="history">
+    <div class="historyText">
+      <h2>Our History</h2>
+      <p>Ed Fisher opened Purple Chopstix in 1989. For over twenty-five years, he’s been providing Athens with a unique and eclectic variety of delicious food. These days, his son Gabe joins him in the kitchen, helping prepare all the Chopstix favorites and crafting new specials weekly!</p>
+    </div>
+  </div>
+  <!-- history -->
+
+  <div class="container galleryContainer">
+    <div class="row">
+      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
+      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
+      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
+      <div class="col-4 gallery gallerySocial">
+        <a href="#" class="fa fa-facebook"></a>
+        <h3>Join our Facebook page to see more!</h3>
+      </div>
+      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
+      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
+      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
+    </div>
+  </div>  
+  <!-- gallery -->
+
+  <div class="footer">
+    <div class="footerText">
+      <p>(740) 592-4798
+        <br>Wednesday—Saturday: 5PM to 8PM
+        <br>Sunday Brunch: 11AM to 1PM
+        <br>371 Richland Avenue, Athens, OH 45701</p>
+      <p class="copyright"><i>Copyright 2021 &#169 Purple Chopstix</i></p>
+    </div>
+  </div>
+  <!-- history -->
+
+    
+
+    <script scr="js/jquery.slim.min.js"></script>
+    <script scr="js/popper.min.js"></script>
+    <script scr="js/bootstrap.min.js"></script>
+  </body>
+</html>
