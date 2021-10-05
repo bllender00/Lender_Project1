@@ -36,26 +36,26 @@ h2 {
     padding: 0.3em 0 0;
 }
 
-.myNav ul {
+.myNav ul{
     background-color: var(--purple);
     font-family: var(--deco);
     font-size: 1.3rem;
     width: 100%;
 }
 
-.nav-link {
+a.nav-link {
     color: var(--white);
     margin: 0 1em 0.5em;
     border: 3px solid transparent;
 }
 
-.nav-link:hover,
-.active {
+a.nav-link:hover,
+a.active {
     color: var(--white);
     border-bottom: 3px solid var(--orange);
 }
 
-.alert-light {
+div.alert-light {
     color: var(--white);
     background-color: var(--darkpurple);
     border-radius: 0;
@@ -93,7 +93,7 @@ h2 {
     background-color: var(--darkpurple);
 }
 
-.CTA-btn {
+a.CTA-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,8 +116,22 @@ figcaption {
     margin-top: 5px;
 }
 
-.btn-primary {
+button.btn, 
+input.btn,
+a.btn {
     background-color: var(--orange);
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button.btn:hover,
+button.btn:active, 
+input.btn:hover,
+input.btn:active,
+a.btn:hover,
+a.btn:active {
+    background-color: var(--orange);
+    filter:brightness(110%);
 }
 
 .brunch {
@@ -169,23 +183,49 @@ figcaption {
     border-radius: 50%;
 }
 
-.menuBtn {
+button.menuBtn {
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 1em;
-    background-color: #fff;
+    background-color: var(--white);
     border: none;
     color: var(--purple);
 }
 
-.catering {
+button.menuBtn:hover,
+button.menuBtn:active {
+    background-color: var(--lightpurple);
+    filter: none;
+    color: var(--purple);
+}
+
+div.menuInfo {
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+}
+
+div.card {
+    background-color: var(--lightpurple);
+}
+
+div.card b {
+    
+}
+
+.collapse {
+    display: flex;
+    justify-content: center;
+}
+
+div.catering {
     border: solid 5px var(--purple);
     padding: 1em;
     border-radius: 10px;
-    max-width: 60%;
+    width: 80%;
     margin: 6em auto 10em;
     color: var(--darkpurple);
 }
@@ -197,25 +237,25 @@ figcaption {
 .catering p {
     text-align: center;
     width: 40%;
-    margin: 0em 30% 0.5em;
+    margin: 0em auto 0.5em;
 }
 
 p.payment {
     width: 30%;
-    margin: 2em 35% 0;
+    margin: 2em auto 1em;
 }
 
-.cateringBtn {
-    padding: 0.5em 2em 0.3em;
+button.cateringBtn {
+    padding: 0.4em 2em 0.3em;
     margin: 1.5em 0;
 }
 
-.submitBtn {
+input.submitBtn {
     width: 34%;
     text-transform: uppercase;
     font-size: 1.1rem;
     margin: 0.5em 33%;
-    padding: 0.8em 1em 0.4em;
+    padding: 1em 1em 0.8em;
     border-radius: 10px;
 }
 
@@ -232,10 +272,6 @@ p.payment {
 .eventInfo {
     width: 15%;
     margin: 0 2em;
-}
-
-.cateringEvents {
-    display: flex;
 }
 
 .eventInfo .form-control,
@@ -265,8 +301,9 @@ p.payment {
     margin-top: 1.5px;
 }
 
-.history {
+div.history {
     background-color: var(--darkpurple);
+    width: 100%;
     margin: 2em 0 8em;
     min-height: 10em;
     color: var(--white);
@@ -337,13 +374,52 @@ p.payment {
     font-size: 0.85em;
 }
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 1024px) {
+    
+    input.submitBtn {
+        width: 40%;
+        margin: 0 30%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    
+    div.catering {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     /* body {
       background-color: lightblue;
     } */
 
-    .menuBtn {
+    button.menuBtn {
         width: 60%;
+    }
+
+    .catering p {
+        width: 50%;
+    }
+
+    .cateringInput {
+        width: 74%;
+        margin: 0 13%;
+    }
+
+    .eventInfo {
+        width: 20%;
+        margin: 0 1em;
+    }
+
+    .cateringFood {
+        max-height: 3em;
+        overflow-y: scroll;
+    }
+
+    .cateringFood .col-6 {
+        width: 90%;
+        padding: 0 5%;
     }
   }
 
@@ -358,10 +434,9 @@ p.payment {
         align-items: center;
     }
 
-    .CTA-btn {
+    a.CTA-btn {
         font-size: 1.3rem;
         width: 80%;
-        min-height: 150px;
         margin: 1em 0.5em;
     }
 
@@ -387,8 +462,12 @@ p.payment {
         margin: 0 5%;
     }
 
-    .catering {
-        max-width: 80%;
+    button.menuBtn {
+        width: 75%;
+        margin: 0 0.5em;
+    }
+
+    div.catering {
         margin: 6em auto;
     }
 
@@ -398,8 +477,8 @@ p.payment {
     }
 
     .cateringInput {
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        margin: 0 5%;
     }
 
     .eventInfo {
@@ -410,18 +489,18 @@ p.payment {
     .cateringFood {
         width: 100%;
         margin: 0 0 2em;
-        max-height: 3em;
-        overflow-y: scroll;
     }
 
-    .cateringFood .col-6 {
-        width: 90%;
-        padding: 0 5%;
+    p.payment {
+        width: 60%;
+        margin: 0.5em auto 1em;
     }
 
-    .submitBtn {
+    input.submitBtn {
         width: 80%;
         margin: 0 10%;
+        padding: 1em 0;
+        font-size: 1.1rem;
     }
 
     .historyText {
@@ -436,12 +515,12 @@ p.payment {
         padding: 0 2em 0;
     }
 
-    .galleryContainer {
+    div.galleryContainer {
         width: 90%;
         margin: 0 5%;
     }
 
-    .gallery {
+    div.gallery {
         width: 7.5em;
         height: 7.5em;
         margin: 0.2em;
