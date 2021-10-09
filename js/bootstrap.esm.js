@@ -842,7 +842,7 @@ defineJQueryPlugin(Alert);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap (v5.1.0): button.js
+ * Bootstrap (v5.1.0): a.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -880,7 +880,7 @@ class Button extends BaseComponent {
 
   static jQueryInterface(config) {
     return this.each(function () {
-      const data = Button.getOrCreateInstance(this);
+      const data = a.getOrCreateInstance(this);
 
       if (config === 'toggle') {
         data[config]();
@@ -899,7 +899,7 @@ class Button extends BaseComponent {
 EventHandler.on(document, EVENT_CLICK_DATA_API$6, SELECTOR_DATA_TOGGLE$5, event => {
   event.preventDefault();
   const button = event.target.closest(SELECTOR_DATA_TOGGLE$5);
-  const data = Button.getOrCreateInstance(button);
+  const data = a.getOrCreateInstance(button);
   data.toggle();
 });
 /**

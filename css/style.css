@@ -26,6 +26,15 @@ h2 {
     font-size: 2.5rem;
 }
 
+.toTop {
+    margin-top: 0;
+    padding: 0;
+}
+
+.fa-arrow-up {
+    color: var(--orange);
+}
+
 .myNav {
     background-color: var(--purple);
 }
@@ -43,16 +52,39 @@ h2 {
     width: 100%;
 }
 
+.sticky {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.sticky + .alert {
+    padding-top: 10%;
+  }
+
+
 a.nav-link {
     color: var(--white);
-    margin: 0 1em 0.5em;
-    border: 3px solid transparent;
+    margin: 0.5em 1em;
+    border: 5px solid transparent;
+    font-size: 1.5rem;
+    padding: 0;
 }
+
+.nav-item {
+    padding: 0;
+}
+
+.anchor{
+    display: block;
+    height: 6em; /*same height as header*/
+    margin-top: -6em; /*same height as header*/
+  }
 
 a.nav-link:hover,
 a.active {
-    color: var(--white);
-    border-bottom: 3px solid var(--orange);
+    color: white;
+    border-bottom: 5px solid var(--orange);
 }
 
 div.alert-light {
@@ -81,8 +113,13 @@ div.alert-light {
     border-radius: 10px;
 }
 
+.fa-facebook:hover {
+    color: var(--orange);
+    filter: brightness(130%);
+}
+
 .jumbotron {
-    background-image: url(img/hero1.jpg);
+    background-color: none;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,7 +153,7 @@ figcaption {
     margin-top: 5px;
 }
 
-button.btn, 
+a.btn, 
 input.btn,
 a.btn {
     background-color: var(--orange);
@@ -124,18 +161,22 @@ a.btn {
     transition: 0.2s ease-in-out;
 }
 
-button.btn:hover,
-button.btn:active, 
-input.btn:hover,
-input.btn:active,
 a.btn:hover,
-a.btn:active {
+a.btn:active, 
+input.btn:hover,
+input.btn:active {
     background-color: var(--orange);
     filter:brightness(110%);
 }
 
+a.btn:visited,
+a.btn:focus,
+input.btn:visited,
+input.btn:focus {
+    background-color: var(--orange);
+}
+
 .brunch {
-    background-image: url(img/brunch1.jpg);
     margin: 2em 0;
     border-radius: 10px;
     width: 98%;
@@ -166,59 +207,76 @@ a.btn:active {
     font-size: 1.3rem;
 }
 
-.menu h2 {
-    color:var(--purple);
+.menuHeader {
+    margin-top: 2em;
+    color: var(--purple)
 }
 
-.menuContainer {
+.menuDetails {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 0.5em;
+    color: var(--darkpurple);
+}
+
+.accordion {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    overflow: scroll;
-    overflow-y: hidden;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 5%;
 }
 
-.menuPhoto {
-    width: 200px;
-    border-radius: 50%;
-}
-
-button.menuBtn {
-    width: 30%;
+button.accordion-button {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 1em;
-    background-color: var(--white);
-    border: none;
+    font-size: 1.2rem;
+    border: solid 5px transparent;
+}
+
+button.accordion-button:not(.collapsed) {
+    background-color: white;
     color: var(--purple);
+    border: solid 5px var(--lightpurple);
 }
 
-button.menuBtn:hover,
-button.menuBtn:active {
-    background-color: var(--lightpurple);
-    filter: none;
-    color: var(--purple);
+button.accordion-button:hover, 
+button.accordion-button:active, 
+button.accordion-button:visited, 
+button.accordion-button:focus{
+    border: solid 5px var(--lightpurple);
+    z-index: 0;
 }
 
-div.menuInfo {
-    width: 80%;
-    margin: 0 10%;
-    text-align: center;
+button.accordion-button img {
+    width: 100%;
+    padding: 0 0 1em 0;
+    border-radius: 50%;
 }
 
-div.card {
-    background-color: var(--lightpurple);
-}
-
-div.card b {
-    
-}
-
-.collapse {
+div.menuItem {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuPhoto {
+    object-fit: cover;
+}
+
+div.accordion-item {
+    border: none;
+    max-width: 20em;
+}
+
+div.accordion-body {
+    text-align: center;
+    background-color: var(--lightpurple);
+    color: var(--darkpurple);
+    max-width: 20em;
 }
 
 div.catering {
@@ -245,7 +303,7 @@ p.payment {
     margin: 2em auto 1em;
 }
 
-button.cateringBtn {
+a.cateringBtn {
     padding: 0.4em 2em 0.3em;
     margin: 1.5em 0;
 }
@@ -257,6 +315,7 @@ input.submitBtn {
     margin: 0.5em 33%;
     padding: 1em 1em 0.8em;
     border-radius: 10px;
+    font-weight: 500;
 }
 
 .cateringInput {
@@ -279,17 +338,19 @@ input.submitBtn {
     text-align: center;
 }
 
-.cateringFood {
-    min-height: 400px;
+div.cateringFood {
+    max-height: 25em;
     background-color: var(--lightpurple);
-    width: 70%;
-    padding: 5%;
-    margin: 0 15%;
+    width: 45%;
+    padding: 1em 5%;
+    margin: 0 auto;
+    font-size: 1.1rem;
     border-radius: 10px;
+    overflow-y: scroll;
 }
 
 .form-check {
-    margin: 0.3em 0;
+    margin: 1em 0;
 }
 
 .form-label {
@@ -313,7 +374,7 @@ div.history {
 
 .historyText {
     width: 80%;
-    margin: 0 10%;
+    margin: 0 auto;
     color: var(--white);
     font-size: 1.3rem;
     padding: 2em 0;
@@ -324,31 +385,31 @@ div.history {
     text-align: center;
 }
 
-.galleryContainer {
-    width: 72%;
-    margin: 0 16%;
+div.galleryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 
-.gallery {
-    width: 20em;
-    height: 20em;
-    object-fit: cover;
-    margin: 0.5em;
-    background-size: cover;
-    background-repeat: no-repeat;
+.galleryContainer h3 {
+    color: var(--purple);
+    padding: 0.4em 0 0 0;
 }
 
 .gallerySocial {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 0em 10% 1em 5%;
 }
 
-.gallerySocial h3 {
-    margin: 0.5em 0 0;
-    color: var(--purple)
+div.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
 }
+
 
 .footer {
     background-color: var(--purple);
@@ -376,6 +437,26 @@ div.history {
 
 @media only screen and (max-width: 1024px) {
     
+    .historyText {
+        width: 90%;
+    }
+
+    .accordion {
+        max-width: 50em;
+        justify-content: flex-start;
+        margin: 0 auto;
+        overflow-x: scroll;
+    }
+
+    .accordion-item {
+        width: 15em;
+        padding: 0;
+    }
+    
+    button.accordion-button {
+        font-size: 1.1rem;
+    }
+    
     input.submitBtn {
         width: 40%;
         margin: 0 30%;
@@ -383,7 +464,11 @@ div.history {
 }
 
 @media only screen and (max-width: 980px) {
-    
+
+    button.accordion-button img {
+        width: 100%;
+    }
+
     div.catering {
         width: 90%;
     }
@@ -394,7 +479,25 @@ div.history {
       background-color: lightblue;
     } */
 
-    button.menuBtn {
+    .accordion {
+        max-width: 35em;
+    }
+
+    button.accordion-button img {
+        width: 95%;
+        padding: 0 0 0.5em 0;
+    }
+
+    .accordion-item {
+        width: 20em;
+    }
+
+    a.CTA-btn {
+        width: 40%;
+        margin: 1em 0.5em;
+    }
+
+    a.menuBtn {
         width: 60%;
     }
 
@@ -412,32 +515,80 @@ div.history {
         margin: 0 1em;
     }
 
-    .cateringFood {
-        max-height: 3em;
-        overflow-y: scroll;
+    div.cateringFood {
+        width: 60%;
+        max-height: 20em;
     }
 
-    .cateringFood .col-6 {
-        width: 90%;
-        padding: 0 5%;
+    input.submitBtn {
+        width: 70%;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        margin: 0.5em 15%;
+        padding: 1.2em 0;
+        border-radius: 10px;
     }
+
+    .historyText {
+        width: 100%;
+    }
+
+    div.galleryContainer {
+        width: 80%;
+    }
+
+    .gallerySocial {
+        flex-direction: column;
+        padding: 0 10% 1em;
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+      a.nav-link {
+          width: 6.8em;
+          text-align: center;
+          margin: 0 1em;
+      }
+
+      .accordion {
+          width: 25em;
+      }
   }
 
   @media only screen and (max-width: 425px) {
     
+    .accordion {
+        max-width: 22em;
+    }
+
+    .accordion-item {
+        width: 18em;
+    }
+    
+    .title {
+        font-size: 2.5rem;
+    }
+
     .myNav ul {
-        background-color: var(--purple);
-        border-top: solid 2px var(--lightpurple);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    a.nav-link {
+        width: 5em;
+    }
+
+    .sticky + .alert {
+        padding-top: 36%;
+      }
+
+    button.accordion-button img {
+        width: 95%;
+        padding: 0 0 0.5em 0;
     }
 
     a.CTA-btn {
         font-size: 1.3rem;
         width: 80%;
-        margin: 1em 0.5em;
     }
 
     .alert-light {
@@ -462,7 +613,7 @@ div.history {
         margin: 0 5%;
     }
 
-    button.menuBtn {
+    a.menuBtn {
         width: 75%;
         margin: 0 0.5em;
     }
@@ -472,8 +623,8 @@ div.history {
     }
 
     .catering p {
-        width: 100%;
-        margin: 0em 0 1em;
+        width: 85%;
+        margin: 0em auto 1em;
     }
 
     .cateringInput {
@@ -486,9 +637,9 @@ div.history {
         margin: 0 0.2em;
     }
 
-    .cateringFood {
-        width: 100%;
-        margin: 0 0 2em;
+    div.cateringFood {
+        width: 80%;
+        margin: 0 auto 1em;
     }
 
     p.payment {
@@ -497,10 +648,9 @@ div.history {
     }
 
     input.submitBtn {
-        width: 80%;
-        margin: 0 10%;
+        width: 90%;
+        margin: 0 5%;
         padding: 1em 0;
-        font-size: 1.1rem;
     }
 
     .historyText {
@@ -515,21 +665,9 @@ div.history {
         padding: 0 2em 0;
     }
 
-    div.galleryContainer {
-        width: 90%;
-        margin: 0 5%;
-    }
-
-    div.gallery {
-        width: 7.5em;
-        height: 7.5em;
-        margin: 0.2em;
-    }
-    
-    .gallerySocial h3 {
-        font-size: 1rem;
-        margin: 0.5em 0 0;
-        color: var(--purple)
+    div.carousel-item img {
+        width: 100%;
+        height: 250px;
     }
 
     .footerText {

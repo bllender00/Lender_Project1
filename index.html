@@ -1,405 +1,878 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Hind+Guntur:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Hind+Guntur:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+
 
     <title>Purple Chopstix Redesign</title>
-  </head>
-  <body>
-    <div class="myNav">
-      <h1 class="title">Purple Chopstix</h1>
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Catering</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">History</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
-        </li>
-      </ul>
-      <!-- .nav-items -->
-  
-      <div
-        class="alert alert-light d-flex align-items-center justify-content-center" role="alert">
-        <a href="#" class="fa fa-facebook"></a>
-        <div class="alert-lg">
-          Currently Reservation Only <br>Wednesday—Saturday: 5PM to 8PM |
-          Sunday Brunch: 11AM to 1PM <br>371 Richland Avenue, Athens, OH 45701
+</head>
+
+<body>
+
+    <div class="myNav" id="topOfPage">
+        <h1 class="title">Purple Chopstix</h1>
+        <ul id="navbar" class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav nav-link" id="home-tab" data-toggle="tab" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="home-tab" data-toggle="tab" href="#catering">Catering</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#history">History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav nav-item toTop">
+              <a class="nav-link" href="#topOfPage">Top <i class="fa fa-arrow-up"></i></a>
+            </li>
+        </ul>
+        <!-- .nav-items -->
+
+        <div class="alert alert-light d-flex align-items-center justify-content-center" role="alert">
+            <a href="https://www.facebook.com/purplechopstix/" class="fa fa-facebook"></a>
+            <div class="alert-lg">
+                Currently Reservation Only <br>Wednesday—Saturday: 5PM to 8PM |
+                Sunday Brunch: 11AM to 1PM <br>371 Richland Avenue, Athens, OH 45701
+            </div>
+            <div class="alert-mobile">
+                Currently Reservation Only <br>Wednesday—Saturday: 5PM to 8PM
+                <br>Sunday Brunch: 11AM to 1PM <br>371 Richland Avenue, Athens, OH 45701
+            </div>
         </div>
-        <div class="alert-mobile">
-          Currently Reservation Only <br>Wednesday—Saturday: 5PM to 8PM
-          <br>Sunday Brunch: 11AM to 1PM <br>371 Richland Avenue, Athens, OH 45701
-        </div>
-      </div>
-      <!-- .alert -->
+        <!-- .alert -->
     </div>
     <!-- .myNav -->
-    <div class="jumbotron bkg-img-cover white-type"></div>
+
+    
+
+    
+    <div class="jumbotron bkg-img-cover white-type" style="
+    background-image: url(img/hero1.jpg);"></div>
     <!-- .jumbotron hero image-->
-  
+
     <div class="top-CTA d-flex align-items-center justify-content-center">
-      <a type="button" class="btn btn-primary CTA-btn">Call for Reservation
-      <figcaption>(740) 592-4798</figcaption></a>
-      <a type="button" class="btn btn-primary CTA-btn">Order Carry Out</a>
+        <a type="button" class="btn btn-primary CTA-btn">Call for Reservation
+            <figcaption>(740) 592-4798</figcaption>
+        </a>
+        <a type="button" class="btn btn-primary CTA-btn">Order Carry Out</a>
     </div>
     <!-- reservation and carryout -->
-  
+
     <div class="container">
-      <div class="brunch jumbotron bkg-img-cover white-type">
-        <div class="brunchText">
-          <p>Our brunch buffet offers tons of delicious items that change every week!</p>
-          <h4>Open every Sunday 11AM to 1PM</h4>
+        <div class="brunch jumbotron bkg-img-cover white-type" style="background-image: url(img/brunch1.jpg);">
+            <div class="brunchText">
+                <p>Our brunch buffet offers tons of delicious items that change every week!</p>
+                <h4>Open every Sunday 11AM to 1PM</h4>
+            </div>
         </div>
-      </div>
     </div>
     <!-- brunch container -->
-    
-    <div class="container menu">
-      <h2>Appetizers</h2>
-      <p class="menuContainer">
-        <button class="btn btn-primary menuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
-          <img class="menuPhoto" src="img/brunch1.jpg" alt="menu item">
-          Greek Pizza</button>
-        
-        <button class="btn btn-primary menuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
-          <img class="menuPhoto" src="img/brunch1.jpg" alt="menu item">
-          Greek Pizza 2</button>
 
-        <button class="btn btn-primary menuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
-            <img class="menuPhoto" src="img/brunch1.jpg" alt="menu item">
-            Greek Pizza 3</button>
+    <!-- MENU START - APPETIZERS -->
+    <span class="anchor" id="menu"></span>
+    <h2 class="display-5 menuHeader">Appetizers</h2>
+    <div class="accordion" id="accordionExample1">
+        <div class="menuItem">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    <img class="menuPhoto" src="img/greek-pizza.jpg" alt="menu photo">
+                    Greek Pizza
+              </button>
+            </h2>
+          </div>
 
-        <button class="btn btn-primary menuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">
-            <img class="menuPhoto" src="img/brunch1.jpg" alt="menu item">
-            Greek Pizza 4</button>
-        
-        <button class="btn btn-primary menuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">
-            <img class="menuPhoto" src="img/brunch1.jpg" alt="menu item">
-            Greek Pizza 5</button>
-      </p>
+          <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample1">
+              <div class="accordion-body">
+                <strong>Regular $10</strong>
+                <br>Creamy pesto spread on warm flatbread, toppd with kalamata tapenade, fresh tomatoes, and feta cheese.
+                $10
+              </div>
+          </div>
+        </div><!-- menu item-->
 
-      <div class="row">
-        <div class="menuInfo">
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div class="card card-body">
-              <p><b>Regular $10</b>
-              <br>Creamy pesto spread on warm flatbread, toppd with kalamata tapenade, fresh tomatoes, and feta cheese.</p>
+        <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                    <img class="menuPhoto" src="img/nori-sushi-roll.jpg" alt="menu photo">
+                    Nori Sushi Roll
+                </button>
+              </h2>
             </div>
-          </div>
-        </div>
 
-        <div class="menuInfo">
-          <div class="collapse multi-collapse" id="multiCollapseExample2">
-            <div class="card card-body">
-              <p><b>Regular $10</b>
-              <br>Creamy pesto spread on warm flatbread, toppd with kalamata tapenade, fresh tomatoes, and feta cheese.</p>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                  <strong>Regular $9</strong>
+                  <br>Scallion, daikon radish, carrot, and red pepper make this vegan delicacy a tasty treat. With wasabi, pickled ginger, and soy sauce.
+                </div>
+              </div>
+          </div><!-- menu item-->
+
+          <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                    <img class="menuPhoto" src="img/crostini-bread.jpg" alt="menu photo">
+                    Crostini Bread
+                </button>
+              </h2>
             </div>
-          </div>
-        </div>
-        
-        <div class="menuInfo">
-          <div class="collapse multi-collapse" id="multiCollapseExample3">
-            <div class="card card-body">
-              <p><b>Regular $10</b>
-              <br>Creamy pesto spread on warm flatbread, toppd with kalamata tapenade, fresh tomatoes, and feta cheese.</p>
+
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                  <strong>Regular $8</strong>
+                  <br>Toasted slices of French baguette topped with garlic butter, sweet peppers, parsley, and mozzarella.
+                </div>
+              </div>
+          </div><!-- menu item-->
+
+          <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                    <img class="menuPhoto" src="img/nachos-grande.jpg" alt="menu photo">
+                    Nachos Grande
+                </button>
+              </h2>
             </div>
+
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                  <strong>Regular $11</strong>
+                  <br>Piled high with peppers, onions, beans, cheese, and green chili. Served with our house salsa and sour cream garnish.
+                </div>
+              </div>
+          </div><!-- menu item-->
+
+          <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                    <img class="menuPhoto" src="img/artichoke-dip.jpg" alt="menu photo">
+                    Warm Artichoke Parmesan Dip
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                  <strong>Regular $10</strong>
+                  <br>Served with pita points and chips.
+                </div>
+              </div>
+          </div><!-- menu item-->
+    </div>
+    <!-- Appetizers collapse -->
+
+    <!-- A LA CARTE START -->
+    <h2 class="display-5 menuHeader">A La Carte</h2>
+    <div class="accordion" id="accordionExample2">
+        <div class="menuItem">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    <img class="menuPhoto" src="img/sesame-chicken-salad.jpg" alt="menu photo">
+                    Sesame-Ginger Salad
+              </button>
+            </h2>
           </div>
+
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                <strong>Chicken or Tofu $14</strong>
+                <br>Tender strips of chicken or tofu seared in *Daisy* sauce over a bed of greens with feta and sesame soy dressing.
+              </div>
+          </div>
+        </div><!-- menu item-->
+
+        <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                    <img class="menuPhoto" src="img/house-salad.jpg" alt="menu photo">
+                    House Salad
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <strong>Regular $6</strong>
+                  <br>Gourmet greens with carrot, red cabbage, cucumber, and tomato.
+                </div>
+              </div>
+          </div><!-- menu item-->
+
+          <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                    <img class="menuPhoto" src="img/tom-yum-soup.jpg" alt="menu photo">
+                    Tom Yum Soup
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <strong>Regular $6</strong>
+                  <br>Beans and rice in a spicy Thai coconut broth with scallions and fresh ginger.
+                </div>
+              </div>
+          </div><!-- menu item-->
+
+          <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                    <img class="menuPhoto" src="img/chips-salsa.jpg" alt="menu photo">
+                    Chips and Salsa
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <strong>Regular $5</strong>
+                  <br>Tortilla chips paired with our house salsa and sour cream.
+                </div>
+              </div>
+          </div><!-- menu item-->
+    </div>
+    <!-- A La Carte collapse -->
+
+    <!-- CURRY START -->
+    <h2 class="display-5 menuHeader">Curry Dishes</h2>
+    <p class="menuDetails">
+        Simmered with fresh garlic and ginger and served over a bed of jasmine rice.
+        <br><strong>Chicken or Tofu $17 | Shrimp $19</strong></p>
+    <div class="accordion" id="accordionExample3">
+        <div class="menuItem">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading10">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                    <img class="menuPhoto" src="img/yellow-curry.jpg" alt="menu photo">
+                    Yellow Indian Curry
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample3">
+              <div class="accordion-body">
+                <br>A mild blend of sweet spices, garnished with raita.
+              </div>
+          </div>
+        </div><!-- menu item-->
+
+        <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading11">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                    <img class="menuPhoto" src="img/red-curry.jpg" alt="menu photo">
+                    Red Thai Coconut
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample3">
+                <div class="accordion-body">
+                  <br>Sweet potatoes and mixed veggies sauteed in soy sauce and garlic over rice noodles in a luscious peanut sauce.
+                </div>
+              </div>
+          </div><!-- menu item-->
+
+          <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading12">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                    <img class="menuPhoto" src="img/green-curry.jpg" alt="menu photo">
+                    Green Thai Coconut
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample3">
+                <div class="accordion-body">
+                  <br>Sweet potatoes and mixed veggies sauteed in soy sauce and garlic over rice noodles in a luscious peanut sauce.
+                </div>
+              </div>
+          </div><!-- menu item-->
+    </div>
+    <!-- Curry Dishes collapse -->
+
+    <!-- CREPES START -->
+    <h2 class="display-5 menuHeader">Signature Crepes</h2>
+    <p class="menuDetails">
+        Two homemade crepes with your choice of filling. Served with jasmine rice and chef's steamed vegetables.</p>
+    <div class="accordion" id="accordionExample4">
+        <div class="menuItem">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading13">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
+                    <img class="menuPhoto" src="img/seafood-crepe.jpg" alt="menu photo">
+                    Seafood
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample4">
+              <div class="accordion-body">
+                <strong>Regular $21</strong>
+                <br>Blend of baby shrimp and flaked crab with garlic, onions and sweet peppers. Topped with shrimp in sherry cream.
+              </div>
+          </div>
+        </div><!-- menu item-->
+
+        <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading14">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
+                    <img class="menuPhoto" src="img/veggie-crepe.jpg" alt="menu photo">
+                    Veggie Tofu
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample4">
+                <div class="accordion-body">
+                  <strong>Regular $18</strong>
+                  <br>A delightful blend of sautéed, marinated tofu and vegetables topped with creamy béchamel.
+                </div>
+              </div>
+          </div><!-- menu item-->
+
+    </div>
+    <!-- Signature Crepes collapse -->
+
+    <!-- PASTA START -->
+    <h2 class="display-5 menuHeader">Pastas</h2>
+    <div class="accordion" id="accordionExample5">
+        <div class="menuItem">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading15">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
+                    <img class="menuPhoto" src="img/linguine-shrimp.jpg" alt="menu photo">
+                    Linguine Shrimp and Scallops
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionExample5">
+              <div class="accordion-body">
+                <strong>Regular $20</strong>
+                <br>With sautéed peppers, onions and cherry tomatoes in a light white wine and garlic sauce.
+              </div>
+          </div>
+        </div><!-- menu item-->
+
+        <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading16">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="true" aria-controls="collapse16">
+                    <img class="menuPhoto" src="img/sweet-potato-pasta.jpg" alt="menu photo">
+                    Sweet Potato Peanut Pasta
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#accordionExample5">
+                <div class="accordion-body">
+                  <strong>Regular $16 | Chicken or Tofu $20 | Shrimp $21</strong>
+                  <br>Sweet potatoes and mixed veggies sauteed in soy sauce and garlic over rice noodles in a luscious peanut sauce.
+                </div>
+              </div>
+          </div><!-- menu item-->
+
+          <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading17">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="true" aria-controls="collapse17">
+                    <img class="menuPhoto" src="img/alfredo.jpg" alt="menu photo">
+                    Seafood Alfredo
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#accordionExample5">
+                <div class="accordion-body">
+                  <strong>Regular $20</strong>
+                  <br>Shrimp and crab in sherry cream with asparagus tips and baby tomatoes. Sprinkled with parmesan and parsley.
+                </div>
+              </div>
+          </div><!-- menu item-->
+
+          <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading18">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="true" aria-controls="collapse18">
+                    <img class="menuPhoto" src="img/pesto-veggie.jpg" alt="menu photo">
+                    Veggie Pesto Pasta
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#accordionExample5">
+                <div class="accordion-body">
+                  <strong>Regular $16 | Chicken or Tofu $20 | Shrimp $21</strong>
+                  <br>Sun-dried tomatoes, portabellas, onions, sweet peppers and artichoke hearts tossed with linguine and fresh pesto.
+                </div>
+              </div>
+          </div><!-- menu item-->
+    </div>
+    <!-- Pastas collapse --> 
+
+    <!-- HOUSE SPECIALS START -->
+    <h2 class="display-5 menuHeader">House Specials</h2>
+    <div class="accordion" id="accordionExample6">
+        <div class="menuItem">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading19">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="true" aria-controls="collapse19">
+                    <img class="menuPhoto" src="img/daisy-stir-fry.jpg" alt="menu photo">
+                    Daisy Stir Fry
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#accordionExample6">
+              <div class="accordion-body">
+                <strong>Chicken or Tofu $17 | Shrimp $19</strong>
+                <br>Sautéed veggies with baby corn, water chestnuts and snow peas in sweet sesame ginger sauce.
+              </div>
+          </div>
+        </div><!-- menu item-->
+
+        <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading20">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="true" aria-controls="collapse20">
+                    <img class="menuPhoto" src="img/bolivian-al-gusto.jpg" alt="menu photo">
+                    Bolivian Al Gusto
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionExample6">
+                <div class="accordion-body">
+                  <strong>Chicken or Tofu $17 | Shrimp $19</strong>
+                  <br>Pan-seared veggies in a robust red wine sweet chili sauce with rice and beans.
+                </div>
+              </div>
+          </div><!-- menu item-->
+
+          <div class="menuItem">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading21">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="true" aria-controls="collapse21">
+                    <img class="menuPhoto" src="img/pollo-de-taos.jpg" alt="menu photo">
+                    Pollo de Taos
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#accordionExample6">
+                <div class="accordion-body">
+                  <strong>Regular $18</strong>
+                  <br>Breaded chicken breasts seared in green chili topped with melted cheese. Served with rice, beans, and tortilla chips garnish.
+                </div>
+              </div>
+          </div><!-- menu item-->
+    </div>
+    <!-- House Specials collapse --> 
+
+    <h2 class="display-5 menuHeader">Beverages</h2>
+    <p class="menuDetails">
+        <strong>Each $2</strong>
+        <br>Raspberry Juice
+        <br>Mandarin Peach Juice, Iced Tea
+        <br>Lemonade, Hot Tea, Coffee, Decaf</p>
+    <!-- Beverages --> 
+
+    <span class="anchor" id="catering"></span>
+    <div class="container catering">
+        <h2 class="display-5">Catering</h2>
+        <p>Please provide your contact info, event details and dish selections below.</p>
+        <div class="form-floating mb-3 cateringInput">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Full Name</label>
         </div>
-          
-      </div>
-      <!-- row -->
-    </div>
-  <!-- menu collapse -->
-
-  <div class="container catering">
-    <h2>Catering</h2>
-    <p>Please provide your contact info, event details and dish selections below.</p>
-    <div class="form-floating mb-3 cateringInput">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Full Name</label>
-    </div>
-    <div class="form-floating mb-3 cateringInput">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email</label>
-    </div>
-    <div class="form-floating mb-3 cateringInput">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Phone Number</label>
-    </div>
-    <div class="mb-3 cateringInput eventName">
-      <label for="formGroupExampleInput" class="form-label">Event Name</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Susie's Bridal party">
-    </div>
-    <div class="cateringEvents">
-      <div class="mb-3 eventInfo">
-        <label for="formGroupExampleInput" class="form-label">Event Date</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="mm/dd/yy">
-      </div>
-      <div class="mb-3 eventInfo">
-        <label for="formGroupExampleInput" class="form-label">Start Time</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="0:00 AM">
-      </div>
-      <div class="mb-3 eventInfo">
-        <label for="formGroupExampleInput" class="form-label">End Time</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="0:00 PM">
-      </div>
-    </div>
-    <!-- catering events -->
-
-    <p>
-      <button class="btn btn-primary cateringBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Catering Dishes <i class="fa fa-chevron-down"></i>
-      </button>
-    </p>
-    <div class="collapse" id="collapseExample">
-      <div class="cateringFood row">
-        <div class="col-6">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Antipasto tray
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Artichoke parmesan dip
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Brie in filo dough w/ apricot rosemary jam
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Cheese tray
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Chicken tenders
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Cilantro sweet chili shrimp
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Cream puffs
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Crepe rolls
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Croissants
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Crostini breads
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Deviled eggs
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Finger sandwhiches - assorted fillings
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Flatbread pinwheels
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Fruit platter
-            </label>
-          </div>
+        <div class="form-floating mb-3 cateringInput">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email</label>
         </div>
-  
-        <div class="col-6">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Greek pizza
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Hummus
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Honey ginger sweet potato fires
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Meatballs
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Mini burritos
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Nori sushi - california or inari
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Quesadillas
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Petit fours
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Phyllo cups - variety fillings
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Smoked salmon cheesecake squares
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Spanakopita
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Stuffed mushrooms
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Samosas
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              White chocolate strawberries
-            </label>
-          </div>
+        <div class="form-floating mb-3 cateringInput">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Phone Number</label>
         </div>
-      </div>
-      <!-- catering food -->
+        <div class="mb-3 cateringInput eventName">
+            <label for="formGroupExampleInput" class="form-label">Event Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Susie's Bridal party">
+        </div>
+        <div class="cateringEvents">
+            <div class="mb-3 eventInfo">
+                <label for="formGroupExampleInput" class="form-label">Event Date</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="mm/dd/yy">
+            </div>
+            <div class="mb-3 eventInfo">
+                <label for="formGroupExampleInput" class="form-label">Start Time</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="0:00 AM">
+            </div>
+            <div class="mb-3 eventInfo">
+                <label for="formGroupExampleInput" class="form-label">End Time</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="0:00 PM">
+            </div>
+        </div>
+        <!-- catering events -->
+
+        <p>
+            <a class="btn btn-primary cateringBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Catering Dishes <i class="fa fa-chevron-down"></i>
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="cateringFood">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Antipasto tray
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Artichoke parmesan dip
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Brie in filo dough w/ apricot rosemary jam
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Cheese tray
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Chicken tenders
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Cilantro sweet chili shrimp
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Cream puffs
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Crepe rolls
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Croissants
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Crostini breads
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Deviled eggs
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Finger sandwhiches - assorted fillings
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Flatbread pinwheels
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Fruit platter
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Greek pizza
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Hummus
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Honey ginger sweet potato fires
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Meatballs
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Mini burritos
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Nori sushi - california or inari
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Quesadillas
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Petit fours
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Phyllo cups - variety fillings
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Smoked salmon cheesecake squares
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Spanakopita
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Stuffed mushrooms
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Samosas
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        White chocolate strawberries
+                    </label>
+                </div>
+                <!-- catering food -->
+            </div>
+        </div>
+
+        <p class="payment">Provide method of payment at time of order delivery.</p>
+        <input class="btn btn-primary cateringBtn submitBtn" type="submit" value="Place Catering Order">
     </div>
 
-    <p class="payment">Provide method of payment at time of order delivery.</p>
-    <input class="btn btn-primary cateringBtn submitBtn" type="submit" value="Place Catering Order">
-  </div>
-  
-  <div class="history">
-    <div class="historyText">
-      <h2>Our History</h2>
-      <p>Ed Fisher opened Purple Chopstix in 1989. For over twenty-five years, he’s been providing Athens with a unique and eclectic variety of delicious food. These days, his son Gabe joins him in the kitchen, helping prepare all the Chopstix favorites and crafting new specials weekly!</p>
+    <span class="anchor" id="history"></span>
+    <div class="history">
+        <div class="historyText">
+            <h2 class="display-5">Our History</h2>
+            <p>Ed Fisher opened Purple Chopstix in 1989. For over twenty-five years, he’s been providing Athens with a unique and eclectic variety of delicious food. These days, his son Gabe joins him in the kitchen, helping prepare all the Chopstix favorites and crafting new specials weekly!</p>
+        </div>
     </div>
-  </div>
-  <!-- history -->
+    <!-- history -->
 
-  <div class="container galleryContainer">
-    <div class="row">
-      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
-      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
-      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
+
+    <span class="anchor" id="gallery"></span>
+    <div class="jumbotron" id="gallery">
+        <div class="container galleryContainer">
+            <h2 class="display-5">Photo Gallery</h2>
+            <div class="gallerySocial">
+                <h3>Join us on Facebook!</h3>
+                <a href="https://www.facebook.com/purplechopstix/" class="fa fa-facebook"></a>
+            </div>
+            <div class="col-sm-12">
+                <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="6" class="active" aria-current="true" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/purple_chopstix1.jpeg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Barcelona, Spain</h5>
+                                <p>Adonis Durado</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/purple_chopstix2.jpeg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Joshua Tree, California</h5>
+                                <p>Juan Thomassie</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/purple_chopstix3.jpeg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Barcelona, Spain</h5>
+                                <p>Tim Goheen</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/purple_chopstix4.jpeg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Barcelona, Spain</h5>
+                                <p>Tim Goheen</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/purple_chopstix5.jpeg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Barcelona, Spain</h5>
+                                <p>Tim Goheen</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/purple_chopstix6.jpeg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Barcelona, Spain</h5>
+                                <p>Tim Goheen</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/purple_chopstix7.jpeg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Barcelona, Spain</h5>
+                                <p>Tim Goheen</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/purple_chopstix8.jpeg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Barcelona, Spain</h5>
+                                <p>Tim Goheen</p>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="row">
-      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
-      <div class="col-4 gallery gallerySocial">
-        <a href="#" class="fa fa-facebook"></a>
-        <h3>Join our Facebook page to see more!</h3>
-      </div>
-      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
-    </div>
 
-    <div class="row">
-      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
-      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
-      <div class="col-4 gallery" style="background-image: url(img/brunch1.jpg);"></div>
+    <div class="footer">
+        <div class="footerText">
+            <p>(740) 592-4798
+                <br>Wednesday—Saturday: 5PM to 8PM
+                <br>Sunday Brunch: 11AM to 1PM
+                <br>371 Richland Avenue, Athens, OH 45701
+            </p>
+            <p class="copyright"><i>Copyright 2021 &#169 Purple Chopstix</i></p>
+        </div>
     </div>
-  </div>  
-  <!-- gallery -->
+    <!-- history -->
 
-  <div class="footer">
-    <div class="footerText">
-      <p>(740) 592-4798
-        <br>Wednesday—Saturday: 5PM to 8PM
-        <br>Sunday Brunch: 11AM to 1PM
-        <br>371 Richland Avenue, Athens, OH 45701</p>
-      <p class="copyright"><i>Copyright 2021 &#169 Purple Chopstix</i></p>
-    </div>
-  </div>
-  <!-- history -->
 
-    
 
     <script scr="js/jquery.slim.min.js"></script>
     <script scr="js/popper.min.js"></script>
     <script scr="js/bootstrap.min.js"></script>
-  </body>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+        }
+    </script>
+</body>
+
 </html>
