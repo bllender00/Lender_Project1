@@ -147,7 +147,18 @@ a.CTA-btn {
     outline-offset: -8px;
 }
 
+a.CTA-btn:active {
+    outline: solid 2px var(--darkpurple);
+    outline-offset: -8px;
+}
+
 figcaption {
+    font-family: var(--body);
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+small {
     font-family: var(--body);
     font-size: 1rem;
     margin-top: 5px;
@@ -405,9 +416,15 @@ div.galleryContainer {
 }
 
 div.carousel-item img {
-    height: 400px;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+div.carousel-caption {
+    color: white;
+    background: radial-gradient(circle, rgba(56,4,47,1) 20%, rgba(56,4,47,0.5) 77%, rgba(56,4,47,0) 100%);
+    padding: 0 1em;
 }
 
 
